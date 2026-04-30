@@ -1,29 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DATA 1500 project</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <p class = "name">Emily Figueroa</p>
-        <h1>Data Narratives Class</h1>
-        <div class = "divider"></div>
-        <p>This is to practice how to make a website in class to prepare for our
-            final project in the end.
-        </p>
-        <p>This is to practice how to make a website in class to prepare for our
-            final project in the end. This is the start of my second paragrpah.
-        </p>
-        <p>This is to practice how to make a website in class to prepare for our
-            final project in the end. This is the start to my second pargraph.
-        </p>
-        <img src = "images/rhode_island.png",
-        alt = "100% stacked area chart of the population share of the five counties of Rhode Island, showing that Providence's share declined starting around WWII.">
-        <h2>About this story</h2>
-        <img src = "images/tulip-garden.png">
-        <p>Here's a <a href= "https://www.brown.edu/">link</a>.</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unaccompanied: A Migration Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Barlow+Condensed:wght@300;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Emily Figueroa</p>
+      <h1>Unaccompanied</h1>
+      <p class="hero-sub">A picture of US migration from its most vulnerable population: Unaccompanied Migrant Children.</p>
+    </div>
+    <div class="hero-scroll-hint">Scroll to explore ↓</div>
+  </header>
+
+  <!-- INTRO SECTION -->
+  <section class="section section-intro" id="intro">
+    <div class="content-block">
+      <img src="images/MV2ASX2KPZPH3DXS62E6KPGGDM.jpg" alt="Border fence with children's belongings" class="full-img reveal" />
+      <div class="divider"></div>
+      <p class="reveal">As a subpopulation of the immigration landscape, unaccompanied migrant children navigate different federal legal systems, protections, and processing pathways. Unaccompanied migrant children are defined as minors who arrive at US borders without a legal guardian.</p>
+      <p class="reveal">As a vulnerable population, these children are protected by law under the <em>Homeland Security Act of 2002</em> and the <em>2008 William Wilberforce Trafficking Victims Protection Reauthorization Act (TVPRA)</em> which legally binds the U.S. Department of Health and Human Services to care for these children. Once arrived at the border, they are placed under the custody and care of the Office of Refugee Resettlement (ORR) and held in centers until sponsors are found.</p>
+      <p class="reveal">Over the past decade, the number of children arriving in the United States without a legal guardian has continued to grow significantly. With instability found in their home countries, these children are migrating to the United States in search of safety and opportunity. The migration of these children is not defined by a single pattern: it varies across time, geography, and demographics.I wish to understand the demographic differences and experiences of this vulnerable population navigating the complicated, unjust US immigration system.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 1: Migration Patterns -->
+  <section class="section section-dark" id="patterns">
+    <div class="content-block">
+      <h2 class="section-label reveal">Migration Patterns Across the Years: What does migration look like?</h2>
+      <div class="divider reveal"></div>
+
+      <div class="chart-container reveal">
+        <div class="chart-title">2021 sharply diverged from typical monthly arrival patterns</div>
+        <div class="chart-sub">Monthly arrivals of unaccompanied children by the thousands, 2015–2022</div>
+        <img src="images/arrivals_monthly-copy.gif" alt="Line chart: monthly arrivals of unaccompanied children 2015–2022" class="chart-img" />
+        <p class="chart-source">Source: The New York Times. Data gathered by the U.S. Department of Health and Human Services.<br>Note: 2023 omitted due to significant missing data. Pre-Pandemic line is the average monthly arrivals across 2013–2018.</p>
+      </div>
+
+      <p class="reveal">Before the disruption of the pandemic, unaccompanied child migration followed similar monthly patterns with monthly arrival rates staying relatively consistent. From January to August, approximately 5,000 unaccompanied children would arrive in the United States each month, with a steady increase as the year progressed.</p>
+      <p class="reveal">This pattern was disrupted with border restrictions in 2019–2020 because of the global pandemic. Migration dropped significantly from over 5,000 children arriving per month to the lowest arrival of 32 children in May 2020. With the pandemic further weakening countries, the US experienced record-breaking monthly arrival rates in 2021 and 2022 after restrictions were lifted.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: From Where, To Whom -->
+  <section class="section section-light" id="origin">
+    <div class="content-block">
+      <h2 class="section-label reveal">From Where, To Whom, and To Where?</h2>
+      <div class="divider reveal"></div>
+
+      <div class="chart-container reveal">
+        <div class="chart-title">Majority of unaccompanied child migrants are arriving in Texas from Honduras</div>
+        <div class="chart-sub">Total number of migrant children arriving in the US across the top 10 destination states, 2015–2023, by sponsor type and top country of origin</div>
+        <img src="images/from_where.gif" alt="Bar chart: top 10 destination states by sponsor type" class="chart-img" />
+        <p class="chart-source">Source: The New York Times. Data gathered by the U.S. Department of Health and Services on children who have migrated to the U.S. without an adult. Note: Destination state was found from the sponsor's ZIP code.</p>
+      </div>
+
+      <p class="reveal">Even with monthly and yearly changes in arrival rates, what remains unchanged is where the majority of these children are relocated. The states that intake the most children (where most sponsors are located) are <strong>Texas, California, and Florida</strong>. Although arriving at the border alone, they are often released to a parent or an immediate family member.</p>
+      <p class="reveal">These children are leaving from Central American countries (Honduras, Guatemala, and El Salvador) which have long, complex histories of poverty, economic instability, violence, and food insecurity. These hardships were further aggravated by the COVID-19 pandemic, in which the US saw the highest rates of migration from this vulnerable population.</p>
+      <p class="reveal">In the United States, they hope to find jobs, opportunity, and financial and social stability but what they find is often exploitation.</p>
+
+      <blockquote class="pull-quote pull-quote--light reveal">
+        "Carolina came on her own from Guatemala last year when she was 14. Like a lot of the kids I talked to, she told me that after the pandemic, food was scarce in her village. Even drinking water was scarce. There weren't any jobs. And so she decided to leave and come to this country where she thought life might be easier." <a href="https://www.npr.org/2023/05/04/1173697113/immigrant-child-labor-crisis" target="_blank">- NPR</a>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Who is Migrating -->
+  <section class="section section-dark" id="who">
+    <div class="content-block">
+      <h2 class="section-label reveal">Who is Migrating?</h2>
+      <div class="divider reveal"></div>
+
+      <div class="chart-container reveal">
+        <div class="chart-title">Across the U.S., boys consistently outnumber girls among unaccompanied migrant children</div>
+        <div class="chart-sub">The % difference in migrant children arrivals by gender, 2015–2023</div>
+        <img src="images/map-for-final-narrative-copy.gif" alt="Choropleth map: gender imbalance among unaccompanied migrant children by state" class="chart-img" />
+        <p class="chart-source">Note: Destination state found from sponsor's ZIP code. Gender difference calculated as (% of male migrants − % of female migrants).</p>
+      </div>
+
+      <p class="reveal">Every state receives more boys than girls among unaccompanied migrant children, though the gendered difference varies across the country. In states such as <strong>New Mexico and North Dakota</strong>, boys outnumber girls by as much as 40–45%, while other states show smaller, though still consistent, gaps.</p>
+      <p class="reveal">This pattern suggests that migration is not only shaped by geography, but also by gendered experiences. Carolina, like many other children, left her home country in search of greater opportunity. Yet, she is the minority. Girls make up a much smaller share of unaccompanied migrants who seek sponsorship in the United States.</p>
+      <p class="reveal">One explanation for this imbalance lies in how boys and girls are positioned differently within migration systems. A <a href="https://www.nytimes.com/2023/02/25/us/unaccompanied-migrant-child-workers-exploitation.html" target="_blank"><em>New York Times</em></a> investigation found that many unaccompanied childrend up working in some of the most brutal jobs across the United States, often in industries that rely on physically demanding labor. Boys may be more likely to undertake the journey alone because they are both expected and more readily taken in by sponsors into these dangerous labor markets, where exploitation is high.</p>
+      <p class="reveal">The gender imbalance in unaccompanied migration therefore reflects more than just who is moving...it reveals how economic demand, social expectations, and vulnerability intersect.</p>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section class="section section-conclusion" id="conclusion">
+    <div class="content-block">
+      <h2 class="section-label reveal">Framing the Landscape of Migration</h2>
+      <div class="divider reveal"></div>
+      <img src="images/framin_mig.png" alt="Framing the landscape of migration" class="chart-img reveal" />
+      <p class="reveal">Unaccompanied child migration cannot be understood through a single lens. It is shaped by sudden changes in arrival patterns, concentrated placement within a small number of states, and uneven demographic experiences across the country.</p>
+      <p class="reveal">Together, these patterns reveal a system that is both structured and unpredictable. A system that responds to global instability while relying on localized networks of care. Understanding these dynamics is essential to recognizing the lived experiences of unaccompanied children, who remain one of the most overlooked, vulnerable, and exploited populations in the broader immigration landscape.</p>
+
+      <div class="resources reveal">
+        <h3>Further Resources & Readings</h3>
+        <ul>
+          <li><a href="https://hsph.harvard.edu/news/migrant-children-in-u-s-detention-face-physical-mental-harms-report/" target="_blank">Migrant children in U.S. detention face physical, mental harms — Harvard T.H. Chan School of Public Health</a></li>
+          <li><a href="https://immigrationjustice.us/immigration-detention-in-the-united-states/" target="_blank">Immigration Detention in the United States — Immigration Justice Campaign</a></li>
+          <li><a href="https://acaciajustice.org/two-new-reports-reveal-harms-of-prolonged-custody-for-unaccompanied-children/" target="_blank">Reports from National Center for Youth Law and Acacia — Harms of Prolonged Custody</a></li>
+          <li><a href="https://www.themarshallproject.org/2026/01/29/ice-kids-in-detention-numbers" target="_blank">Children in ICE Detention Skyrocket in Trump's Second Term — The Marshall Project</a></li>
+          <li><a href="https://journals.sagepub.com/doi/10.1177/01979183251316528" target="_blank">New Data on Unaccompanied Minors in US Immigration Court (2009–2023) — Chiara Galli, Tatiana Padilla, 2025</a></li>
+          <li><a href="https://news.berkeley.edu/2025/04/24/to-understand-immigration-today-a-uc-berkeley-sociologist-documented-200-personal-stories/" target="_blank">To understand immigration today, a UC Berkeley sociologist documented 200 personal stories — Berkeley News</a></li>
+          <li><a href="https://www.npr.org/2023/05/04/1173697113/immigrant-child-labor-crisis" target="_blank">The U.S. is facing a child labor crisis involving immigrant kids — NPR</a></li>
+        </ul>
+      </div>
+
+      <div class="data-source reveal">
+        <h3>Data Source</h3>
+        <p>This analysis uses a <a href="https://github.com/nytimes/hhs-child-migrant-data/blob/main/LICENSE" target="_blank">New York Times dataset</a> on child migration patterns acquired through a subpoena of the U.S. Department of Health and Human Services. It contains anonymized information on more than <strong>550,000 child migrants</strong> from January 2015 to May 2023, including details on gender, country of origin, destination ZIP code, and sponsor relationship.</p>      </div>
+    </div>
+    <div class="data-source reveal">
+  <h3>Image Sources</h3>
+  <ol>
+    <li>
+      Security guards stand behind shoes and toys left at the Tornillo, Tex., port of entry, where minors crossing the U.S.-Mexico border without proper papers have been housed after being separated from adults. (Brendan Smialowski/AFP/Getty Images) -
+      <a href="https://www.washingtonpost.com/opinions/the-real-hoax-about-the-border-crisis/2018/06/21/5999c96e-7589-11e8-805c-4b67019fcfe4_story.html" target="_blank">Opinion | The real hoax about the border crisis - The Washington Post</a>
+    </li>
+    <li>
+      Young unaccompanied migrants, from ages 3 to 9, watch television inside a playpen at the U.S. Customs and Border Protection facility, the main detention center for unaccompanied children in the Rio Grande Valley, in Donna, Texas. (March 30, 2021) -
+      <a href="https://www.newsweek.com/fort-bliss-shelter-unaccompanied-minors-sees-40-drop-children-housed-there-1605152" target="_blank">Fort Bliss Shelter for Unaccompanied Minors Sees 40% Drop in Children Housed There - Newsweek</a>
+    </li>
+    <li>
+      Collage of artwork created by children who were previously in ORR care -
+      <a href="https://acf.gov/orr/programs/uac" target="_blank">Unaccompanied Alien Children | The Administration for Children and Families</a>
+    </li>
+    <li>
+      A U.S. Border Patrol Agent escorts two asylum-seeking unaccompanied minors from Central America after crossing the Rio Grande river into the United States from Mexico, in La Joya, Texas, March 19. (Adrees Latif - Reuters) -
+      <a href="https://time.com/5948102/unaccompanied-children-border-foster-care/" target="_blank">Foster Families Step Up For Unaccompanied Children at Border - Time</a>
+    </li>
+  </ol>
+</div>
+  </section>
+
+  <footer>
+    <p>Data 1500 Narrative Exploration</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
